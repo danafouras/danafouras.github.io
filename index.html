@@ -136,7 +136,29 @@
       letter-spacing:.12em;
       margin-bottom:3px;
     }
+ .new-connections-layout {
+      display:grid;
+    grid-template-columns:minmax(0, 1.5fr) minmax(220px, .85fr);
+      gap:40px;
+      align-items:start;
+    }
 
+    .new-connections-photo {
+      margin:28px 0 0;
+      padding-right:20px;
+    }
+
+    .new-connections-photo img {
+      display:block;
+      width:100%;
+      max-width:360px;
+      height:auto;
+      margin:0 auto;
+    }
+
+    .new-connections-text {
+      padding-top:28px;
+    }
     @media(max-width:760px) {
       .royal-ballet-layout {
         grid-template-columns:1fr;
@@ -377,16 +399,16 @@
 </section>
   <section>
    <section class="about" id="new-connections">
-  <div class="wrap">
+ <div class="wrap">
     <h2>New Connections</h2>
 
-    <div class="royal-ballet-layout">
-      <figure class="royal-ballet-photo">
+    <div class="new-connections-layout">
+      <figure class="new-connections-photo">
         <img src="assets/IMG_5872.jpg"
              alt="Stage illuminated by two spotlights">
       </figure>
 
-      <div class="royal-ballet-text">
+      <div class="new-connections-text">
         <h3>The Creative Intensive — Movement, Light &amp; Sound</h3>
 
         <p>
@@ -417,7 +439,6 @@
     </div>
   </div>
 </section>
-
   <section class="contact" id="contact">
     <div class="wrap">
       <div class="section-label">Contact</div>
