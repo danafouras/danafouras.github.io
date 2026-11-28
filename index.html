@@ -104,6 +104,12 @@
       gap:40px;
       align-items:start;
     }
+    .sound-layout {
+  display:grid;
+  grid-template-columns:minmax(0, 1.5fr) minmax(220px, .85fr);
+  gap:40px;
+  align-items:start;
+}
 
    .royal-ballet-photo {
   margin:28px 0 0;
@@ -160,10 +166,11 @@
       padding-top:28px;
     }
     @media(max-width:760px) {
-      .royal-ballet-layout {
-        grid-template-columns:1fr;
-        gap:24px;
-      }
+     .royal-ballet-layout,
+.sound-layout {
+  grid-template-columns:1fr;
+  gap:24px;
+}
 
       .royal-ballet-photo {
         max-width:420px;
@@ -243,11 +250,17 @@
 </section>
   <section class="sound" id="sound">
     <div class="wrap">
-      <div class="sound-content"><h2>Sound and composition</h2>
+     <div class="sound-layout">
+  <div class="sound-content">
+    <h2>Sound and composition</h2>
         <p>Composition is at the centre of Dana's current creative practice. Her work explores sound, atmosphere, rhythm and texture, informed by an embodied understanding of movement and time.</p>
         <p>Alongside music created in dialogue with choreography, she is developing an independent body of work and opening new directions for listening, collaboration and commission.</p>
         <p><a href="https://soundcloud.com/danafouras-music" target="_blank" rel="noopener">Listen to Dana Fouras on SoundCloud ↗</a></p>
-      </div><div class="work-item" style="border-top:none;">
+     </div>
+       <figure class="royal-ballet-photo">
+  <img src="assets/IMG_6841.jpg" alt="Dana working at an audio mixing desk">
+</figure>
+       <div class="work-item" style="border-top:none;">
   <div class="tag">Composition · Selected commissions</div>
   <h3>Composing for performance</h3>
   <p>Dana's commissioned composition work includes projects with Russell Maliphant Dance Company, National Youth Dance Company, English National Ballet and the Greek National Opera, supported by the Stavros Niarchos Foundation. Her musical practice brings together a distinctive musical sensibility, an instinct for sound and atmosphere, and a deep understanding of the relationship between music and movement.</p>
