@@ -42,6 +42,9 @@
     .sound h2 { font-size:clamp(40px,5vw,64px); }
     .work-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px 7%; }
     .work-item { padding-top:22px; border-top:1px solid var(--line); }
+    .work-item[style*="grid-column:1"] {
+  margin-top:50px;
+}
     .tag { font-size:9px; letter-spacing:.16em; color:var(--muted); text-transform:uppercase; margin-bottom:15px; }
     .work-item p { font-size:13px; }
     .text-link { display:inline-block; margin-top:8px; font-size:10px; letter-spacing:.14em; text-transform:uppercase; }
@@ -300,6 +303,12 @@
         <article class="work-item"><div class="tag">Long-term artistic collaboration</div><h3>Russell Maliphant Dance Company</h3><p>Dana's longstanding creative relationship with the company has encompassed performance, sound, choreography and collaborative development, including The Space Between, Duet, Conceal | Reveal and other productions.</p><a class="text-link" href="https://www.russellmaliphantdancecompany.com/" target="_blank" rel="noopener">Explore RMDC works ↗</a></article>
         <article class="work-item">
   <img src="assets/IMG_6734.jpg"
+       alt="Dance performance photograph"
+       style="display:block;width:100%;height:auto;margin:0 0 10px;">
+  <p class="photo-note">Photo: Julian Broad</p>
+</article>
+        <article class="work-item" style="grid-column:1;">
+  <img src="assets/IMG_6741.jpg"
        alt="Dance performance photograph"
        style="display:block;width:100%;height:auto;margin:0 0 10px;">
   <p class="photo-note">Photo: Julian Broad</p>
